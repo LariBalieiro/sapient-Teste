@@ -205,18 +205,38 @@ html {
   flex-direction: column;
 }
 
-.header {
+.post .header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   order: 2;
-  margin: 0 15px;
+  margin: 20px 15px;
 }
 
+.mini-post .header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  order: 2;
+  margin: 20px 15px;
+}
+.posts .header {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  margin: 0px 15px;
+}
+
+.mini-post .header .tertiary_title a {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
 .tertiary_title a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   margin-right: 10px;
   text-decoration: none;
   font-size: 16px;
@@ -228,16 +248,18 @@ html {
 }
 
 .author img {
-  margin-left: 14rem;
-  border-radius: 50%;
+  margin-left: 90%;
+  margin-bottom: 5%;
+  border-radius: 45%;
 }
 
-.image {
+.mini-post .image {
   order: 1;
+  width: 100%;
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -347,6 +369,7 @@ html {
 }
 
 /* Responsivo para telas menores ou iguais a 1306px */
+
 @media (max-width: 1306px) {
   #main .post .header .meta .published {
     font-size: 12px;
