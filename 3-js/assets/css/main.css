@@ -6,8 +6,8 @@
 }
 
 body {
-  background: url('../img/mobile-mockup.png') center no-repeat;
-  font-family: 'Source Sans Pro', sans-serif;
+  background: url("../img/mobile-mockup.png") center no-repeat;
+  font-family: "Source Sans Pro", sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 body.-overlay .wrapper:before {
-  background-color: rgba(0,0,0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   content: "";
   display: block;
   height: 100vh;
@@ -67,7 +67,7 @@ body.-overlay .wrapper:before {
   right: 10px;
   text-transform: uppercase;
   top: 10px;
-  transition: background .2s ease-in-out;
+  transition: background 0.2s ease-in-out;
   z-index: 10;
 }
 
@@ -87,7 +87,7 @@ body.-overlay .wrapper:before {
   position: absolute;
   top: 0;
   transform: translateX(100%);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   width: 100%;
   z-index: 8;
 }
@@ -126,7 +126,7 @@ body.-overlay .wrapper:before {
   position: absolute;
   top: 0;
   transform-origin: center right;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%;
 }
 
@@ -149,9 +149,8 @@ body.-overlay .wrapper:before {
   background-color: #fff;
 }
 
-/*.accordion .item.-active {
-
-}*/
+/* .accordion .item.-active {
+} */
 
 .accordion .item.-active .description {
   max-height: 800px;
@@ -210,7 +209,7 @@ body.-overlay .wrapper:before {
   padding: 3px 0;
   text-align: center;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .button-modal:hover {
@@ -224,7 +223,7 @@ body.-overlay .wrapper:before {
   left: 0;
   opacity: 0;
   position: absolute;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   visibility: hidden;
   width: 100%;
   z-index: 20;
@@ -242,6 +241,9 @@ body.-overlay .wrapper:before {
 }
 
 .modal-wiki .close-modal {
+  border-radius: 1px;
+  padding: 0.4rem 0.5rem;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   font-weight: 900;
